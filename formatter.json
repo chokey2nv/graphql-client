@@ -1,0 +1,78 @@
+{
+    "_id": "68fa63ffb2b1acb1198e0f38",
+    "barcode": "",
+    "category": {
+        "_id": "68fa63ffb2b1acb1198e0f37",
+        "categoryStatus": null,
+        "createdAt": "2025-10-23T17:21:03.459Z",
+        "description": "",
+        "isTemplate": "",
+        "name": "Adrian Potter",
+        "status": "",
+        "storeId": "68fa63feb2b1acb1198e0f33"
+    },
+    "categoryId": "68fa63ffb2b1acb1198e0f37",
+    "createdAt": "2025-10-23T17:21:03.460Z",
+    "description": "Manuel Jacobs",
+    "images": [],
+    "metricPackage": {
+        "_id": "68fa63ffb2b1acb1198e0f39",
+        "barcode": "",
+        "createdAt": "2025-10-23T17:21:03.461Z",
+        "deduction": 0,
+        "description": "",
+        "name": "Lloyd Carpenter",
+        "price": {
+            "_id": "68fa63ffb2b1acb1198e0f3b",
+            "costPrice": 100,
+            "createdAt": "2025-10-23T17:21:03.464Z",
+            "deduction": 0,
+            "packageId": "68fa63ffb2b1acb1198e0f39",
+            "sellingPrice": 120,
+            "storeId": "68fa63feb2b1acb1198e0f33"
+        },
+        "priorityPrice": 0,
+        "productId": "68fa63ffb2b1acb1198e0f38",
+        "stockLimit": 0,
+        "stocks": [],
+        "storeId": "68fa63feb2b1acb1198e0f33",
+        "totalStock": 100,
+        "trackIndex": 0,
+        "unit": "",
+        "unitQuantity": 0
+    },
+    "metricPackageId": "68fa63ffb2b1acb1198e0f39",
+    "name": "Carolyn Santiago",
+    "productAttributes": [],
+    "productPackages": [
+        {
+            "_id": "68fa63ffb2b1acb1198e0f39",
+            "barcode": "",
+            "createdAt": "2025-10-23T17:21:03.461Z",
+            "deduction": 0,
+            "description": "",
+            "name": "Lloyd Carpenter",
+            "price": {
+                "_id": "68fa63ffb2b1acb1198e0f3b",
+                "costPrice": 100,
+                "createdAt": "2025-10-23T17:21:03.464Z",
+                "deduction": 0,
+                "packageId": "68fa63ffb2b1acb1198e0f39",
+                "sellingPrice": 120,
+                "storeId": "68fa63feb2b1acb1198e0f33"
+            },
+            "priorityPrice": 0,
+            "productId": "68fa63ffb2b1acb1198e0f38",
+            "stockLimit": 0,
+            "stocks": [],
+            "storeId": "68fa63feb2b1acb1198e0f33",
+            "totalStock": 100,
+            "trackIndex": 0,
+            "unit": "",
+            "unitQuantity": 0
+        }
+    ],
+    "storeId": "68fa63feb2b1acb1198e0f33",
+    "tag": "",
+    "totalStockInMetricPackage": 100
+}
