@@ -39,11 +39,9 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "@types/chance": "^1.1.7",
         "@types/node": "^25.6.0",
         "@vitest/coverage-c8": "^0.33.0",
         "@vitest/ui": "^3.2.4",
-        "chance": "^1.1.13",
         "ts-node": "^10.9.2",
         "tsup": "^8.5.0",
         "typescript": "^5.9.2",
