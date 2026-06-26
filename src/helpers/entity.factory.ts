@@ -1,4 +1,4 @@
-import { EntityKey } from "./crud.contract";
+import { EntityKey, Pluralize } from "./crud.contract";
 
 export function createEntityIntegration<
   K extends EntityKey,
@@ -24,16 +24,21 @@ export function createListIntegration<
   Fields,
   Nested extends Record<string, any> = {}
 >(config: {
-  key: `${K}s`;
+  key: K;
   fields: Fields;
   nested?: Nested;
 }) {
+  const pluralKey =
+    (config.key.endsWith("y")
+      ? `${config.key.slice(0, -1)}ies`
+      : `${config.key}s`) as Pluralize<K>;
+
   return {
-    responseFields: [config.key, "total"] as const,
+    responseFields: [pluralKey, "total"] as const,
     nestedFields: {
       ...(config.nested ?? {}),
-      [config.key]: config.fields,
-    } as Record<`${K}s`, Fields> & Nested,
+      [pluralKey]: config.fields,
+    } as Record<Pluralize<K>, Fields> & Nested,
   };
 }
 
