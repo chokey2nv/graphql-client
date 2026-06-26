@@ -1,0 +1,57 @@
+name: Publish SDK
+
+on:
+    push:
+        tags:
+            - "v*"
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+
+        steps:
+            ###########################################
+            # Checkout
+            ###########################################
+            - name: Checkout SDK Repo
+              uses: actions/checkout@v4
+              with:
+                  path: sdk
+
+            ###########################################
+            # Setup Node
+            ###########################################
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "22"
+                  registry-url: "https://registry.npmjs.org"
+
+            ################################################
+            # Enable Yarn
+            ################################################
+            - name: Enable Yarn
+              run: corepack enable
+
+            ###########################################
+            # Install
+            ###########################################
+            - name: Install Dependencies
+              working-directory: sdk
+              run: yarn install
+
+            ###########################################
+            # Build
+            ###########################################
+            - name: Build SDK
+              working-directory: sdk
+              run: yarn build
+
+            ###########################################
+            # Publish
+            ###########################################
+            - name: Publish Package
+              working-directory: sdk
+              run: yarn publish --access public
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

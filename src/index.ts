@@ -1,6 +1,6 @@
 export * from "./auth";
 export * from "./errors";
-export * from "./middleware";
+export * from "./middlewares";
 export * from "./client";
 export * from "./transport"
 export * from "./helpers";

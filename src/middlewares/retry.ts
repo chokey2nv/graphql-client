@@ -1,4 +1,4 @@
-import type { Middleware } from "../middleware";
+import type { Middleware } from "./middleware";
 
 export const retryMiddleware = (opts?: { retries?: number; delayMs?: number }): Middleware => {
   const retries = opts?.retries ?? 2;

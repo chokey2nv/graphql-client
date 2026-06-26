@@ -1,4 +1,4 @@
-import { compose, type Middleware, type RequestContext, type ResponseContext } from "./middleware";
+import { compose, type Middleware, type RequestContext, type ResponseContext } from "./middlewares";
 import { createTransport } from "./transport";
 import { toAsyncHeadersFactory, toAsyncTokenProvider } from "./auth";
 import type { GraphQLResponse } from "./types/request";
