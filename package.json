@@ -1,6 +1,6 @@
 {
     "name": "@chijioke/graphql-client",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Graphql client for typescript",
     "keywords": [
         "graphql",
