@@ -52,6 +52,6 @@ jobs:
             ###########################################
             - name: Publish Package
               working-directory: sdk
-              run: yarn publish --access public
+              run: yarn publish --access public --non-interactive
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
