@@ -1,4 +1,4 @@
-import type { RequestContext, ResponseContext, Middleware } from "./middleware";
+import type { RequestContext, ResponseContext, Middleware } from "./middlewares";
 import type { GraphQLResponse } from "./types/request";
 
 export type TransportOptions = {
